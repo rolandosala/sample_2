@@ -1,1 +1,0 @@
-import{_ as n,c as r,a as o,b as a,w as l,r as s,F as u,o as _,d as c}from"./index-C7dMSQ7M.js";const m={};function d(f,e){const t=s("router-link");return _(),r(u,null,[e[1]||(e[1]=o("h1",null,"Homepage",-1)),o("ul",null,[o("li",null,[a(t,{to:"/about"},{default:l(()=>e[0]||(e[0]=[c("About")])),_:1,__:[0]})])])],64)}const p=n(m,[["render",d]]);export{p as default};

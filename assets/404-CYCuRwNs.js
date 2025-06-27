@@ -1,0 +1,1 @@
+import{_ as o,c as n,a as r,d as a,e as s,r as l,F as _,o as c,f as u}from"./index-D71iEDDR.js";const d={};function f(m,e){const t=l("router-link");return c(),n(_,null,[e[1]||(e[1]=r("h1",null,"Page not Not Found",-1)),a(t,{to:"/"},{default:s(()=>e[0]||(e[0]=[u("Return Home")])),_:1,__:[0]})],64)}const p=o(d,[["render",f]]);export{p as default};

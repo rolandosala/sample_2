@@ -1,1 +1,0 @@
-import{_ as o,c as n,a as r,b as a,w as s,r as l,F as _,o as c,d as u}from"./index-C7dMSQ7M.js";const d={};function m(f,e){const t=l("router-link");return c(),n(_,null,[e[1]||(e[1]=r("h1",null,"Page not Not Found",-1)),a(t,{to:"/"},{default:s(()=>e[0]||(e[0]=[u("Return Home")])),_:1,__:[0]})],64)}const p=o(d,[["render",m]]);export{p as default};
