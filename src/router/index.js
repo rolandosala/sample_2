@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Project from "../components/Project.vue";
 const routes = [
-    { path: '/', component: () => import('../components/Home.vue') },
+    { path: '/', redirect: '/login'},
+    { path: '/login', component: () => import('../components/Login.vue'), name: 'login' },
+    { path: '/home', component: () => import('../components/Home.vue'), meta: { requiresAuth: true }, name: 'home' },
     {
         path: '/about', component: () => import('../components/About.vue'),
         children: [
@@ -14,6 +16,17 @@ const routes = [
 const router = createRouter({
     history: createWebHistory('/sample_2'),
     routes
+})
+
+router.beforeEach((to, from, next) => {
+    const isAuthenticated = !!localStorage.getItem('token');
+    if(to.meta.requiresAuth && !isAuthenticated){
+        next('/login')
+    } else if(to.name === 'login' && isAuthenticated) {
+        next('/home')
+    } else {
+        next()
+    }
 })
 
 export default router
